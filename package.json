@@ -1,0 +1,22 @@
+{
+  "name": "intro-to-state-machines-and-xstate",
+  "version": "1.0.0",
+  "description": "Material for my egghead course on state machines and xstate",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kyleshevlin/intro-to-state-machines-and-xstate.git"
+  },
+  "author": "Kyle Shevlin <kyle.a.shevlin@gmail.com> (https://kyleshevlin.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kyleshevlin/intro-to-state-machines-and-xstate/issues"
+  },
+  "homepage": "https://github.com/kyleshevlin/intro-to-state-machines-and-xstate#readme",
+  "dependencies": {
+    "xstate": "^4.6.7"
+  }
+}
