@@ -1,9 +1,6 @@
 # Intro to State Machines and Xstate
 
 - Course Introduction
-- Optional: What are State Machines?
-  - A graph of all enumerated states and the transitions between them
-- Optional: Let's refactor some code with the parts of a state machine, step by step building our own
 - First machine
   - A humble light bulb
 - Extending a machine
