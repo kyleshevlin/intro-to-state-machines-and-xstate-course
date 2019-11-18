@@ -26,3 +26,10 @@ function lightBulb() {
     }
   }
 }
+
+const bulb = lightBulb()
+
+bulb.toggle()
+console.log(bulb.state())
+bulb.break()
+console.log(bulb.state())

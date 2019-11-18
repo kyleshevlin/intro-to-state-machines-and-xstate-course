@@ -19,3 +19,8 @@ const lightBulbMachine = Machine({
     broken: {}
   }
 })
+
+console.log(lightBulbMachine.initialState)
+console.log(lightBulbMachine('unlit', 'TOGGLE'))
+console.log(lightBulbMachine('unlit', 'BREAK'))
+console.log(lightBulbMachine('broken', 'TOGGLE'))
