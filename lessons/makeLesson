@@ -3,7 +3,7 @@
 D=$1
 mkdir $D
 cd $D
-touch after.js before.js README.md
+touch after.js before.js index.js README.md
 for f in *.js ; do
   echo "// $f" >> $f
 done
