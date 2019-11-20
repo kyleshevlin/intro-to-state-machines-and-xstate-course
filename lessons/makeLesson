@@ -1,0 +1,11 @@
+#!/bin/bash
+
+D=$1
+mkdir $D
+cd $D
+touch after.js before.js README.md
+for f in *.js ; do
+  echo "// $f" >> $f
+done
+echo "# $D" >> README.md
+cd ..
