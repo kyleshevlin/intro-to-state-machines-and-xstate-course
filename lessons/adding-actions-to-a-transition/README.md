@@ -2,7 +2,16 @@
 
 ## Description
 
-Actions are "fire-and-forget" side effects that are triggered by transitions. We set functions on a transitions `actions` property to have them called when a transition is taken.
+Actions are "fire-and-forget" side effects that are triggered by transitions. We set functions on a transition object's `actions` property to have them called when a transition is taken.
+
+```javascript
+//...
+EVENT_NAME: {
+  target: 'name-of-state-to-transition-to',
+  actions: [(context, event) => { sideEffectToFire(context, event) }]
+}
+//...
+```
 
 ## Script
 

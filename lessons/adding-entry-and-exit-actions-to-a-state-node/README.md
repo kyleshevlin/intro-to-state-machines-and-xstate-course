@@ -8,4 +8,22 @@ The API for `entry` and `exit` actions is the same as that for `actions` on tran
 
 This is a powerful way to fire side effects based on states rather than transitions.
 
+```javascript
+//...
+states: {
+  broken: {
+    entry: [
+      (context, event) => {
+        sideEffectToFireWhenWeEnterTheBrokenState(context, event)
+      }
+    ],
+    exit: [
+      (context, event) => {
+        sideEffectToFireWhenWeExitTheBrokenState(context, event)
+      }
+    ]
+  }
+}
+```
+
 ## Script
