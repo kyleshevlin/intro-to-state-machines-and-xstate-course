@@ -7,19 +7,17 @@ const lightBulbMachine = Machine({
     lit: {
       on: {
         BREAK: 'broken',
-        TOGGLE: 'unlit'
-      }
+        TOGGLE: 'unlit',
+      },
     },
     unlit: {
       on: {
         BREAK: 'broken',
-        TOGGLE: 'lit'
-      }
+        TOGGLE: 'lit',
+      },
     },
-    broken: { type: 'final' }
-  }
+    broken: { type: 'final' },
+  },
 })
 
-console.log(
-  lightBulbMachine.transition('lit', 'FOO').value
-)
+console.log(lightBulbMachine.transition('lit', 'TOGGLE').value)

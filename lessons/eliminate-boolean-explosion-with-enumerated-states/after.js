@@ -1,7 +1,7 @@
 const LIGHT_BULB_STATES = {
   lit: 'lit',
   unlit: 'unlit',
-  broken: 'broken'
+  broken: 'broken',
 }
 
 function lightBulb() {
@@ -16,14 +16,16 @@ function lightBulb() {
       switch (state) {
         case lit:
           state = unlit
+          break
 
         case unlit:
           state = lit
+          break
       }
     },
     break() {
       state = broken
-    }
+    },
   }
 }
 
