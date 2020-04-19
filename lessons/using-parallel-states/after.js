@@ -15,10 +15,10 @@ const spaceHeaterMachine = Machine({
           initial: 'lowHeat',
           states: {
             lowHeat: {
-              on: { TOGGLE_HEAT: 'lowHeat' },
+              on: { TOGGLE_HEAT: 'highHeat' },
             },
             highHeat: {
-              on: { TOGGLE_HEAT: 'highHeat' },
+              on: { TOGGLE_HEAT: 'lowHeat' },
             },
           },
         },
