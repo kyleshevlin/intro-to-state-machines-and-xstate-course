@@ -1,0 +1,15 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "13:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: xstate
+    versions:
+    - 4.16.0
+    - 4.16.2
+    - 4.17.0
+    - 4.17.1
