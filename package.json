@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/kyleshevlin/intro-to-state-machines-and-xstate-course#readme",
   "dependencies": {
-    "xstate": "^4.6.7"
+    "xstate": "^4.20.2"
   }
 }
